@@ -8,7 +8,7 @@ Este é um projeto de recriação da página inicial do YouTube utilizando apena
 
 * HTML5
 * CSS3
-* JavaScript (ainda não implementadas)
+* JavaScript (ainda não implementado)
 
 ## 📌 Funcionalidades
 
