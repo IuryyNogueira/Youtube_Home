@@ -1,0 +1,347 @@
+/* botão lateral */
+.botao-barra-lateral {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 24px;
+}
+
+.icon-yt {
+  margin-left: 16px;
+  height: 20.5px;
+  margin-top: 1px;
+}
+
+.icon-lateral {
+  width: var(--icon-size);
+  height: var(--icon-size);
+  margin-right: 2px;
+}
+
+.botao-barra-lateral:hover {
+  background-color: var(--hover-bg-color);
+}
+
+li {
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* scroll */
+
+
+.barra-lateral::-webkit-scrollbar {
+  width: 6px;
+}
+
+.barra-lateral::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.barra-lateral::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.barra-lateral::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.barra-lateral {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* barra lateral */
+.barra-lateral {
+  margin: 0;
+  padding: 18px 12px;
+  position: fixed;
+  top: 50px;
+  height: calc(100vh - 50px);
+  gap: 0;
+  left: 0;
+  width: 240px;
+  display: Flex;
+  flex-direction: column;
+  background-color: #fff;
+
+  z-index: 999;
+
+  overflow-y: hidden;
+  transition: overflow-y 0.3s ease;
+}
+
+.barra-lateral:hover {
+  overflow-y: auto;
+}
+
+.barra-lateral ul {
+  padding: 0;
+  margin: 0;
+}
+
+.barra-lateral li {
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-radius: 10px;
+}
+
+.barra-lateral li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.barra-lateral span {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #333;
+}
+
+.barra-lateral li a span {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.barra-lateral span.forte {
+  font-weight: 600;
+}
+
+.barra-lateral li:hover {
+  background-color: var(--hover-bg-color);
+  border-radius: 10px;
+}
+
+.barra-lateral li.home {
+  background-color: #e5e5e585;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+hr {
+  border: none;
+  border-top: 1px solid #cccccc94;
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sidebar-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-top: auto;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.sidebar-footer .texto-sobre a {
+  margin: 0 !important;
+  padding: 0 !important;
+  text-decoration: none !important;
+  color: #505050 !important;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+  line-height: 10px !important;
+  opacity: 0.8 !important;
+}
+
+.copyright {
+  font-size: 12px;
+  color: #666;
+  text-align: left;
+  margin-top: 4px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+  gap: 16px;
+  padding: 4px 14px;
+}
+
+.botao-fazer-login-lateral:hover {
+  background-color: rgba(0, 123, 255, 0.1);
+  border: 1px solid rgba(107, 68, 68, 0);
+}
+
+.botao-fazer-login-lateral {
+  box-sizing: content-box;
+  all: unset;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid rgba(221, 221, 221, 0.795);
+  padding: 6px 5px;
+  margin: 0;
+  height: 25px;
+  width: 150px;
+}
+
+.icon-login {
+  all: unset;
+  margin-left: 20px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.botao-fazer-login-lateral span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-left: 6px;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  color: #065fd4;
+}
+
+.texto-login {
+  color: black;
+  font-size: 15px;
+  margin-left: 8px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.destaque {
+  font-style: bold;
+  font-size: 16px;
+  font-weight: 700;
+  margin: 16px;
+  margin-left: 8px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+.texto-sobre {
+  all: unset;
+  font-size: 12px;
+  color: #aaa;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+  max-width: 200px;
+  line-height: 1.5;
+  margin-top: auto;
+  margin-bottom: 12px;
+}
+
+.texto-sobre a {
+  all: unset;
+  color: #aaa;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.texto-sobre a:hover {
+  all: unset;
+  text-decoration: underline;
+}

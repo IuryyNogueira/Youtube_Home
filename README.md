@@ -28,8 +28,15 @@ Este é um projeto de recriação da página inicial do YouTube utilizando apena
 
 ## 📁 Organização dos Arquivos
 
-* (ainda não implementada)
-
+```
+├── 📄 index.html
+├── 📁 css/
+│   ├── 📄 main.css
+│   ├── 📄 header.css
+│   ├── 📄 sidebar.css
+│   ├── 📄 videos.css
+│   └── 📄 categorias.css
+```
 ## 🧠 Aprendizados
 
 Este projeto ajudou a praticar:

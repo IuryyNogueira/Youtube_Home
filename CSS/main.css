@@ -1,0 +1,49 @@
+/*outros arquivos CSS */
+@import url("header.css");
+@import url("sidebar.css");
+@import url("categorias.css");
+@import url("videos.css");
+
+/* Global Styles */
+:root {
+  --primary-color: #065fd4;
+  --hover-bg-color: #f0f0f0;
+  --border-radius: 10px;
+  --icon-size: 20px;
+  --font-size-small: 14px;
+  --font-size-medium: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* Utility Classes */
+.icon {
+  width: var(--icon-size);
+  height: var(--icon-size);
+}
+
+.hover-effect {
+  transition: background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.hover-effect:hover {
+  background-color: var(--hover-bg-color);
+}
+
+

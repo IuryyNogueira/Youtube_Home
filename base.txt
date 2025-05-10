@@ -1,0 +1,85 @@
+<!--
+    topo: (fixado)
+        - botão bara lateral
+        - logo
+        - barra de pesquisa
+        - botão de microfone
+        - cofigurações
+        - botão fazer login
+    
+    abaixo do topo (fixado)
+        - scroll horizontal
+        - categorias
+
+    barra lateral fechada (fixada)
+        - inicio
+        - shorts
+        - inscrições
+        - voce
+        - historico
+    
+    barra lateral aberta (fixada)
+        - inicio
+        - shorts
+        - inscrições
+        ------------------
+        - voce
+        - historico
+        -----------------
+        - texto: faça login para curtir videos, comentar e se inscrever
+        - botão fazer login
+        -----------------
+        explorar
+        - em alta
+        - shoping
+        - musica
+        - filmes
+        - ao vivo
+        - jogos 
+        - noticias
+        - esportes
+        - cursos
+        - podcasts
+        ---------------------
+        mais do youtube
+        - youtube premium
+        - youtube kids
+        - youtube music
+        ---------------------
+        - configurações 
+        - historico de denuncias
+        - ajuda
+        - enviar feedback
+        ------------------------
+        - texto: Sobre Imprensa
+                Direitos autorais
+                Entre em contato
+                Criadores de conteúdo
+                Publicidade   Desenvolvedores
+
+                Termos Privacidade
+                Política e segurança
+                Como funciona o YouTube
+                Testar os novos recursos
+                
+                © 2025 Google LLC
+        
+    videos em destaque:
+        - cade video tem seu banner, embaixo foto do canal
+        - nome do video
+        - nome do canal
+        - quantidade de visualizações
+        - data de publicação
+
+        - 3 videos com 100% zoom na minha tela
+            * max 4 por linha 
+        -shorts
+        - cada short tem seu banner 
+        - nome do video
+        - visualizações
+            * max 6 por linha
+
+        2x 
+        depois apenas videos 
+
+     -->
