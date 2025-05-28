@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/main.css">
-    <title>Youtube</title>
+    <title>YouTube</title>
 
+    <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB/klEQVR4nO2YS2sTURiGn0a04iKlCtJNt90Udd9V3cdl/0C1RVToXyhU1KKb/oVoNwU3SlQoCl5XRRdewHYlit0UbzQUs8gjAxMIgZhJMkkmel54N4eZ870PzJzLB0FBQUFBQf+DhBPCGeGccEVYFe4IJeGV8EH4KnyLfSAY+6BuPHrmvfAyfve2cF24HM8d1TieRuCcsCA8Ecp1Yfrlclz7gjDSbvgjwqMBhLaJHwiH2wG4lYHQNng1afijwo8MBLbBP4VjSQBmMxDWJj6bBGA+A0Ft4oUkACsZCGrH/4Gw3lWRzU2dnu4VwN0kAE+7KhKpUtG1NR0bSxvgTRKA110D1LS3p0tLmsulBfAlCcDH1ABq2trSmZk0AH633JUjytQBIlWrurGhk5PdQoy2AvjeE4Ca9vd1eVlHRzutkW8FUOkpQE07Ozo310mNk9kA2N7WQqGTGuPD/AlVhUOD+4mLRZ2Y6Hxu+PXX8EOwjH7u70a2u6uLi2luZG/7e5TI59MKbuwXvT/MlUo6NZV2cGOvD/txemXYLzTzw36lnP33L/WRhJsZCGyDb9BmY+thBkIbu9RWYyuGGBHOD7i1+DheVNprLTYBGhdOCQXhonBVKAr3hGfRLil8qmvi1kOX68ajZ94Jz4X7cXP3mnApnvt0Ks3doKCgoKAghkB/AP70hTNI/HhQAAAAAElFTkSuQmCC" alt="youtube-play"></imag><span>Youtube Premium</span></a></li>
+        
     <!-- Peguei o link google fontes / Usei extensão fonts ninja para descobrir : Roboto regular -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="./JS/barraLateral.js" defer></script>
     <script src="./JS/scrollHorizontal.js" defer></script>
+    <script src="./JS/barraPesquisa.js" defer></script>
 </head>
     
 <body>
@@ -35,15 +38,25 @@
             
             <div class="barra-pesquisa-container">
                 <div class="barra-pesquisa">
-                  <input type="text" placeholder="Pesquisar" class="barra-pesquisa-input" />
+                  <input id="campoPesquisa" type="text" placeholder="Pesquisar" class="barra-pesquisa-input" />
                   <button class="botao-pesquisar">
                     <img class="icon" src="https://img.icons8.com/?size=100&id=XU3XKgdpT0qG&format=png&color=000000" alt="Ícone lupa" />
                   </button>
                 </div>
-                <button class="botao-microfone">
+                <button class="botao-microfone" id="botao-microfone">
                   <img class="icon" src="https://img.icons8.com/?size=100&id=3422&format=png&color=000000" alt="Ícone microfone" />
                 </button>
               </div>
+
+            <div id="modal-voz" class="modal oculto">
+                <div class="conteudo-modal">
+                  <span id="fechar-modal" class="fechar">✕</span>
+                  <p class="ouvindo">Ouvindo...</p>
+                  <button class="botao-modal">
+                    <img src="https://img.icons8.com/?size=100&id=3422&format=png&color=FFFFFF" />
+                  </button>
+                </div>
+            </div>
         
             
             <div class="menu-configuracoes">
