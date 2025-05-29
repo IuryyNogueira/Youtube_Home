@@ -3,12 +3,17 @@ const modal = document.getElementById("modal-voz");
 const fecharModal = document.getElementById("fechar-modal");
 const conteudoModal = document.querySelector(".conteudo-modal");
 const inputPesquisa = document.getElementById("campoPesquisa");
+const botaoLimpar = document.getElementById("limparPesquisa");
+
+//Histórico de pesquisas (localStorage)
+const sugestoesPesquisa = document.getElementById("sugestoes-pesquisa");
+let historico = JSON.parse(localStorage.getItem("historicoPesquisa")) || [];
 
 let recognition;
 
 botaoMicrofone.addEventListener("click", () => {
-  
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+  const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
 
   if (!SpeechRecognition) {
     alert("Seu navegador não suporta reconhecimento de voz.");
@@ -27,11 +32,17 @@ botaoMicrofone.addEventListener("click", () => {
     const resultado = event.results[0][0].transcript;
     console.log("Você disse:", resultado);
     inputPesquisa.value = resultado;
+
+    if (inputPesquisa.value.length > 0) {
+      botaoLimpar.classList.remove("oculto");
+    } else {
+      botaoLimpar.classList.add("oculto");
+    }
   };
 
   recognition.onerror = (event) => {
     alert("Erro no reconhecimento de voz: " + event.error);
-    modal.classList.add("oculto"); // fecha modal se der erro
+    modal.classList.add("oculto"); //fecha modal se der erro
   };
 
   recognition.onend = () => {
@@ -48,9 +59,22 @@ fecharModal.addEventListener("click", () => {
 });
 
 modal.addEventListener("click", (event) => {
-// Fecha o modal se clicar fora do conteúdo
-  if (!conteudoModal.contains(event.target)) {// verifica se o clique foi fora do conteúdo
+  // Fecha o modal se clicar fora do conteúdo
+  if (!conteudoModal.contains(event.target)) {
     modal.classList.add("oculto");
     if (recognition) recognition.stop();
   }
+});
+
+inputPesquisa.addEventListener("input", (e) => {
+  if (e.target.value.length > 0) {
+    botaoLimpar.classList.remove("oculto");
+  } else {
+    botaoLimpar.classList.add("oculto");
+  }
+});
+
+botaoLimpar.addEventListener("click", () => {
+  inputPesquisa.value = "";
+  botaoLimpar.classList.add("oculto");
 });

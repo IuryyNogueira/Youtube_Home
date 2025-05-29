@@ -97,6 +97,9 @@
   left: 30%;
 }
 
+
+
+
 .barra-pesquisa {
   display: flex;
   align-items: center;
@@ -105,15 +108,52 @@
   overflow: hidden;
   height: 36px;
   background-color: white;
+  position: relative; 
+  cursor: text;
 }
 
 .barra-pesquisa-input {
-  border: none;
-  padding: 0 12px;
-  font-size: 14px;
-  outline: none;
+  cursor: text;
+  background: transparent;
   width: 500px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  padding: 0 12px;
 }
+
+.limpar-pesquisa {
+  position: absolute;
+  right: 44px; 
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 22px;
+  color: #888;
+  cursor: pointer;
+  padding: 0 8px;
+  z-index: 2;
+  border-radius: 50%;
+  transition: background 0.15s, color 0.15s;
+  line-height: 1;
+  height: 32px;
+  width: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.limpar-pesquisa:hover {
+  background: #eee;
+  color: #d00;
+}
+.limpar-pesquisa.oculto {
+  display: none;
+}
+
+
+
+
 
 .botao-pesquisar {
   all: unset;
@@ -126,6 +166,10 @@
   cursor: pointer;
   height: 100%;
   position: relative;
+}
+
+.botao-pesquisar:hover {
+  background-color: #e6e6e6;
 }
 
 .botao-microfone {
@@ -214,4 +258,23 @@
   color: #000;
   display: block;
   font-size: 14px;
+}
+
+
+
+
+@media (max-width: 1000px) {
+  .barra-pesquisa-input {
+    width: 350px;
+  }
+}
+@media (max-width: 850px) {
+  .barra-pesquisa-input {
+    width: 200px;
+  }
+}
+@media (max-width: 700px) {
+  .barra-pesquisa-container {
+    display: none;
+  }
 }

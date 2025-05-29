@@ -3,8 +3,8 @@ const rightArrow = document.getElementById("arrow-right");
 const categorias = document.getElementById("categorias");
 
 function visibilidadeArrows() {
-  const scrollEnd = categorias.scrollLeft + categorias.clientWidth;
-  const maxScroll = categorias.scrollWidth;
+  const scrollEnd = categorias.scrollLeft + categorias.clientWidth; // Posição final do scroll
+  const maxScroll = categorias.scrollWidth; // largura total do conteúdo
 
   // seta esquerda
   if (categorias.scrollLeft <= 0) {
@@ -14,7 +14,7 @@ function visibilidadeArrows() {
   }
 
   // seta direita
-  if (scrollEnd >= maxScroll - 1) {
+  if (scrollEnd >= maxScroll - 1) { 
     rightArrow.style.visibility = "hidden";
   } else {
     rightArrow.style.visibility = "visible";
@@ -27,14 +27,14 @@ window.addEventListener("load", visibilidadeArrows);
 
 leftArrow.addEventListener("click", () => {
   categorias.scrollBy({
-    left: -200,
+    left: -300,
     behavior: "smooth",
   });
 });
 
 rightArrow.addEventListener("click", () => {
   categorias.scrollBy({
-    left: 200,
+    left: 300,
     behavior: "smooth",
   });
 });

@@ -37,11 +37,20 @@
             <img class="icon-yt" src="https://www.gstatic.com/youtube/img/branding/youtubelogo/svg/youtubelogo.svg" alt="Logo do Youtube" class="logo-youtube">
             
             <div class="barra-pesquisa-container">
-                <div class="barra-pesquisa">
-                  <input id="campoPesquisa" type="text" placeholder="Pesquisar" class="barra-pesquisa-input" />
+                
+              <div class="barra-pesquisa">
+                  
+                  <input id="campoPesquisa" type="text" placeholder="Pesquisar" class="barra-pesquisa-input" autocomplete="off" />
+                  
+                  <button id="limparPesquisa" class="limpar-pesquisa oculto" type="button" aria-label="Limpar campo">×</button>
+                  
                   <button class="botao-pesquisar">
                     <img class="icon" src="https://img.icons8.com/?size=100&id=XU3XKgdpT0qG&format=png&color=000000" alt="Ícone lupa" />
                   </button>
+                  
+                  <ul id="sugestoes-pesquisa" class="sugestoes-pesquisa oculto">
+                    <!-- Sugestões/histórico aparecem aqui-->
+                  </ul>
                 </div>
                 <button class="botao-microfone" id="botao-microfone">
                   <img class="icon" src="https://img.icons8.com/?size=100&id=3422&format=png&color=000000" alt="Ícone microfone" />
@@ -108,24 +117,7 @@
                 <button class="botao-categorias">Podcasts</button>
                 <button class="botao-categorias">Explorar</button>
                 <button class="botao-categorias">Mais do Youtube</button>
-                <button class="botao-categorias">Notícias</button>
-                <button class="botao-categorias">Esportes</button>
-                <button class="botao-categorias">Cursos</button>
-                <button class="botao-categorias">Podcasts</button>
-                <button class="botao-categorias">Explorar</button>
-                <button class="botao-categorias">Mais do Youtube</button>
-                <button class="botao-categorias">Notícias</button>
-                <button class="botao-categorias">Esportes</button>
-                <button class="botao-categorias">Cursos</button>
-                <button class="botao-categorias">Podcasts</button>
-                <button class="botao-categorias">Explorar</button>
-                <button class="botao-categorias">Mais do Youtube</button>
-                <button class="botao-categorias">Notícias</button>
-                <button class="botao-categorias">Esportes</button>
-                <button class="botao-categorias">Cursos</button>
-                <button class="botao-categorias">Podcasts</button>
-                <button class="botao-categorias">Explorar</button>
-                <button class="botao-categorias">Mais do Youtube</button>                
+                <button class="botao-categorias">Notícias</button>             
             </div>
             <img id="arrow-right"class="arrow-2" src="https://img.icons8.com/?size=100&id=AgsBKswRnV1i&format=png&color=000000">
         </div>
