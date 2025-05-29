@@ -1,14 +1,12 @@
-
-
 # 🎥 YouTube Home Page Remake
 
-Este é um projeto de recriação da página inicial do YouTube utilizando apenas **HTML** e **CSS** (inicialmente). A ideia é reproduzir a interface principal com foco em estrutura, estilo e interatividade básica, sem uso de frameworks ou bibliotecas externas.
+Este é um projeto de recriação da página inicial do YouTube utilizando apenas **HTML**, **CSS** e agora também **JavaScript** para interatividade. O objetivo é reproduzir a interface principal com foco em estrutura, estilo, responsividade e interatividade, sem uso de frameworks ou bibliotecas externas.
 
 ## 🔧 Tecnologias Utilizadas
 
 * HTML5
 * CSS3
-* JavaScript (ainda não implementado)
+* JavaScript
 
 ## 📌 Funcionalidades
 
@@ -16,36 +14,47 @@ Este é um projeto de recriação da página inicial do YouTube utilizando apena
 * ✅ Barra lateral com atalhos
 * ✅ Barra de categorias com rolagem horizontal
 * ✅ Cards de vídeo com miniatura, título e informações do canal
+* ✅ Início das interações com JavaScript (menu lateral, barra de pesquisa, rolagem de categorias)
 * ❌ Sessão de Shorts
-* ❌ Interações com JavaScript (ainda não implementadas)
-* ❌ Responsividade (ainda não implementada)
+* ❌ Modo escuro
 
 ## 🚧 Funcionalidades Futuras
 
-* 📱 Responsividade para dispositivos móveis
-* 🎯 Funcionalidades interativas com JavaScript
+* 📱 Melhorias na responsividade
+* 🎯 Mais funcionalidades interativas com JavaScript
 * 🌙 Modo escuro
+* 🎬 Sessão de Shorts
 
 ## 📁 Organização dos Arquivos
 
 ```
 ├── 📄 index.html
-├── 📁 css/
+├── 📄 styles.css
+├── 📁 CSS/
 │   ├── 📄 main.css
 │   ├── 📄 header.css
 │   ├── 📄 sidebar.css
+│   ├── 📄 sidebarMenor.css
 │   ├── 📄 videos.css
-│   └── 📄 categorias.css
+│   ├── 📄 categorias.css
+│   ├── 📄 modalPesquisaVoz.css
+│   └── 📄 sugestoes-pesquisa.css
+├── 📁 JS/
+│   ├── 📄 barraLateral.js
+│   ├── 📄 barraPesquisa.js
+│   └── 📄 scrollHorizontal.js
 ```
 ## 🧠 Aprendizados
 
 Este projeto ajudou a praticar:
 
-* CSS e Html no geral
+* CSS e HTML no geral
 * Layouts com Flexbox e Grid
 * Controle de overflow e scroll horizontal
 * Estilização de componentes reutilizáveis
-
+* Estruturação de arquivos para projetos web
+* Primeiros passos com interatividade em JavaScript
+* Responsividade para diferentes dispositivos
 
 ## 💡 Inspiração
 
