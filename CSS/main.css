@@ -5,7 +5,7 @@
 @import url("videos.css");
 @import url("sidebarMenor.css");
 @import url("modalPesquisaVoz.css");
-
+@import url("sugestoes-pesquisa.css");
 
 /* Global Styles */
 :root {
@@ -34,7 +34,6 @@ body {
   width: 100%;
 }
 
-
 /* Utility Classes */
 .icon {
   width: var(--icon-size);
@@ -49,5 +48,3 @@ body {
 .hover-effect:hover {
   background-color: var(--hover-bg-color);
 }
-
-
