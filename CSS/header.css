@@ -129,6 +129,8 @@
   cursor: pointer;
   height: 100%;
   position: relative;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .botao-pesquisar:hover {
