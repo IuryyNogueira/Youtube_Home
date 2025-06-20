@@ -68,3 +68,14 @@ Este projeto ajudou a praticar:
 ## 📄 Licença
 
 Este projeto é apenas para fins educacionais e **não tem relação com o YouTube oficial**.
+
+## 🔗 Integração com API da Pexels
+
+O projeto utiliza a API da Pexels para buscar imagens e miniaturas de vídeos de forma dinâmica, enriquecendo a experiência visual da interface. A integração é feita via requisições HTTP utilizando JavaScript, consumindo os endpoints públicos da Pexels para obter imagens de alta qualidade.
+
+- A API é utilizada principalmente para simular miniaturas de vídeos e resultados de pesquisa de imagens.
+- A autenticação é feita por meio de uma chave de API pessoal, que deve ser inserida no código JavaScript responsável pelas requisições.
+- O código de integração pode ser encontrado nos arquivos JS relacionados à manipulação de vídeos e modais de pesquisa.
+- Para mais informações sobre a API, acesse: https://www.pexels.com/api/
+
+> **Atenção:** A chave da API da Pexels não deve ser exposta publicamente em repositórios públicos. Recomenda-se utilizar variáveis de ambiente ou arquivos de configuração ignorados pelo versionamento.
